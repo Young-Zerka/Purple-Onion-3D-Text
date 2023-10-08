@@ -1,3 +1,24 @@
+:root {
+  --color-name-1: #010101;
+  --default: 255;
+  --color-name-2: rgb(var(--default), 41, 41);       
+  --color-name-3: rgb(var(--default), 51, 51);   
+  --color-name-4: rgb(var(--default), 61, 61);   
+  --color-name-5: rgb(var(--default), 71, 71);   
+  --color-name-6: rgb(var(--default), 81, 81);    
+  --color-name-7: rgba(var(--default), 81, 81, 0.9); 
+  --color-name-8: rgba(var(--default), 111, 111, 0.75); 
+  --color-name-9: rgba(var(--default), 121, 121, 0.6);
+  --color-name-10: rgba(var(--default), 131, 131, 0.45); 
+  --color-name-11: rgba(var(--default), 141, 141, 0.3); 
+  --color-name-12: rgba(var(--default), 151, 151, 0.15);
+}
+
+@font-face {
+  font-family: 'thailand';
+  src: url('THAILAND.TTF') format('truetype'); 
+}
+
 html,
 body {
   height: 100vh;
@@ -8,9 +29,9 @@ body {
 }
 
 .text {
-  color: #010101;
+  color: var(--color-name-1);
   font-size: 80px;
-  font-family: Montserrat, serif;
+  font-family: 'thailand', sans-serif;
   font-weight: 900;
   position: relative;
   z-index: 1;
@@ -24,71 +45,71 @@ body {
 
 .text span {
   position: absolute;
-  text-shadow: 1px 1px 0 #f0c, 0 1px 0 #f0c, -1px 1px 0 #f0c, -1px 0 0 #f0c, -1px -1px 0 #f0c, 0 -1px 0 #f0c, 1px -1px 0 #f0c;
+  text-shadow: 1px 1px 0 var(--color-name-1), 0 1px 0 var(--color-name-1), -1px 1px 0 var(--color-name-1), -1px 0 0 var(--color-name-1), -1px -1px 0 var(--color-name-1), 0 -1px 0 var(--color-name-1), 1px -1px 0 var(--color-name-1);
 }
 
 .text span:nth-child(1) {
   transform: perspective(1600px) rotateY(39deg) rotateX(53deg) translateZ(-25px) scale(1.2);
   z-index: 9;
-  text-shadow: 1px 1px 0 #ff00bf, 0 1px 0 #ff00bf, -1px 1px 0 #ff00bf, -1px 0 0 #ff00bf, -1px -1px 0 #ff00bf, 0 -1px 0 #ff00bf, 1px -1px 0 #ff00bf, -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-2), 0 1px 0 var(--color-name-2), -1px 1px 0 var(--color-name-2), -1px 0 0 var(--color-name-2), -1px -1px 0 var(--color-name-2), 0 -1px 0 var(--color-name-2), 1px -1px 0 var(--color-name-2), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(2) {
   transform: perspective(1600px) rotateY(43deg) rotateX(56deg) translateZ(-50px) scale(1.4);
   z-index: 8;
-  text-shadow: 1px 1px 0 #ff00b3, 0 1px 0 #ff00b3, -1px 1px 0 #ff00b3, -1px 0 0 #ff00b3, -1px -1px 0 #ff00b3, 0 -1px 0 #ff00b3, 1px -1px 0 #ff00b3, -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-3), 0 1px 0 var(--color-name-3), -1px 1px 0 var(--color-name-3), -1px 0 0 var(--color-name-3), -1px -1px 0 var(--color-name-3), 0 -1px 0 var(--color-name-3), 1px -1px 0 var(--color-name-3), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(3) {
   transform: perspective(1600px) rotateY(47deg) rotateX(59deg) translateZ(-75px) scale(1.6);
   z-index: 7;
-  text-shadow: 1px 1px 0 #ff00a6, 0 1px 0 #ff00a6, -1px 1px 0 #ff00a6, -1px 0 0 #ff00a6, -1px -1px 0 #ff00a6, 0 -1px 0 #ff00a6, 1px -1px 0 #ff00a6, -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-4), 0 1px 0 var(--color-name-4), -1px 1px 0 var(--color-name-4), -1px 0 0 var(--color-name-4), -1px -1px 0 var(--color-name-4), 0 -1px 0 var(--color-name-4), 1px -1px 0 var(--color-name-4), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(4) {
   transform: perspective(1600px) rotateY(51deg) rotateX(62deg) translateZ(-100px) scale(1.8);
   z-index: 6;
-  text-shadow: 1px 1px 0 #ff0099, 0 1px 0 #ff0099, -1px 1px 0 #ff0099, -1px 0 0 #ff0099, -1px -1px 0 #ff0099, 0 -1px 0 #ff0099, 1px -1px 0 #ff0099, -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-5), 0 1px 0 var(--color-name-5), -1px 1px 0 var(--color-name-5), -1px 0 0 var(--color-name-5), -1px -1px 0 var(--color-name-5), 0 -1px 0 var(--color-name-5), 1px -1px 0 var(--color-name-5), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(5) {
   transform: perspective(1600px) rotateY(55deg) rotateX(65deg) translateZ(-125px) scale(2);
   z-index: 5;
-  text-shadow: 1px 1px 0 #ff008c, 0 1px 0 #ff008c, -1px 1px 0 #ff008c, -1px 0 0 #ff008c, -1px -1px 0 #ff008c, 0 -1px 0 #ff008c, 1px -1px 0 #ff008c, -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-6), 0 1px 0 var(--color-name-6), -1px 1px 0 var(--color-name-6), -1px 0 0 var(--color-name-6), -1px -1px 0 var(--color-name-6), 0 -1px 0 var(--color-name-6), 1px -1px 0 var(--color-name-6), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(6) {
   transform: perspective(1600px) rotateY(59deg) rotateX(68deg) translateZ(-150px) scale(2.2);
   z-index: 4;
-  text-shadow: 1px 1px 0 rgba(255, 0, 128, 0.9), 0 1px 0 rgba(255, 0, 128, 0.9), -1px 1px 0 rgba(255, 0, 128, 0.9), -1px 0 0 rgba(255, 0, 128, 0.9), -1px -1px 0 rgba(255, 0, 128, 0.9), 0 -1px 0 rgba(255, 0, 128, 0.9), 1px -1px 0 rgba(255, 0, 128, 0.9), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-7), 0 1px 0 var(--color-name-7), -1px 1px 0 var(--color-name-7), -1px 0 0 var(--color-name-7), -1px -1px 0 var(--color-name-7), 0 -1px 0 var(--color-name-7), 1px -1px 0 var(--color-name-7), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(7) {
   transform: perspective(1600px) rotateY(63deg) rotateX(71deg) translateZ(-175px) scale(2.4);
   z-index: 3;
-  text-shadow: 1px 1px 0 rgba(255, 0, 115, 0.75), 0 1px 0 rgba(255, 0, 115, 0.75), -1px 1px 0 rgba(255, 0, 115, 0.75), -1px 0 0 rgba(255, 0, 115, 0.75), -1px -1px 0 rgba(255, 0, 115, 0.75), 0 -1px 0 rgba(255, 0, 115, 0.75), 1px -1px 0 rgba(255, 0, 115, 0.75), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-8), 0 1px 0 var(--color-name-8), -1px 1px 0 var(--color-name-8), -1px 0 0 var(--color-name-8), -1px -1px 0 var(--color-name-8), 0 -1px 0 var(--color-name-8), 1px -1px 0 var(--color-name-8), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(8) {
   transform: perspective(1600px) rotateY(67deg) rotateX(74deg) translateZ(-200px) scale(2.6);
   z-index: 2;
-  text-shadow: 1px 1px 0 rgba(255, 0, 102, 0.6), 0 1px 0 rgba(255, 0, 102, 0.6), -1px 1px 0 rgba(255, 0, 102, 0.6), -1px 0 0 rgba(255, 0, 102, 0.6), -1px -1px 0 rgba(255, 0, 102, 0.6), 0 -1px 0 rgba(255, 0, 102, 0.6), 1px -1px 0 rgba(255, 0, 102, 0.6), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-9), 0 1px 0 var(--color-name-9), -1px 1px 0 var(--color-name-9), -1px 0 0 var(--color-name-9), -1px -1px 0 var(--color-name-9), 0 -1px 0 var(--color-name-9), 1px -1px 0 var(--color-name-9), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(9) {
   transform: perspective(1600px) rotateY(71deg) rotateX(77deg) translateZ(-225px) scale(2.8);
   z-index: 1;
-  text-shadow: 1px 1px 0 rgba(255, 0, 89, 0.45), 0 1px 0 rgba(255, 0, 89, 0.45), -1px 1px 0 rgba(255, 0, 89, 0.45), -1px 0 0 rgba(255, 0, 89, 0.45), -1px -1px 0 rgba(255, 0, 89, 0.45), 0 -1px 0 rgba(255, 0, 89, 0.45), 1px -1px 0 rgba(255, 0, 89, 0.45), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-10), 0 1px 0 var(--color-name-10), -1px 1px 0 var(--color-name-10), -1px 0 0 var(--color-name-10), -1px -1px 0 var(--color-name-10), 0 -1px 0 var(--color-name-10), 1px -1px 0 var(--color-name-10), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(10) {
   transform: perspective(1600px) rotateY(75deg) rotateX(80deg) translateZ(-250px) scale(3);
   z-index: 0;
-  text-shadow: 1px 1px 0 rgba(255, 0, 77, 0.3), 0 1px 0 rgba(255, 0, 77, 0.3), -1px 1px 0 rgba(255, 0, 77, 0.3), -1px 0 0 rgba(255, 0, 77, 0.3), -1px -1px 0 rgba(255, 0, 77, 0.3), 0 -1px 0 rgba(255, 0, 77, 0.3), 1px -1px 0 rgba(255, 0, 77, 0.3), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-11), 0 1px 0 var(--color-name-11), -1px 1px 0 var(--color-name-11), -1px 0 0 var(--color-name-11), -1px -1px 0 var(--color-name-11), 0 -1px 0 var(--color-name-11), 1px -1px 0 var(--color-name-11), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
 
 .text span:nth-child(11) {
   transform: perspective(1600px) rotateY(79deg) rotateX(83deg) translateZ(-275px) scale(3.2);
   z-index: -1;
-  text-shadow: 1px 1px 0 rgba(255, 0, 64, 0.15), 0 1px 0 rgba(255, 0, 64, 0.15), -1px 1px 0 rgba(255, 0, 64, 0.15), -1px 0 0 rgba(255, 0, 64, 0.15), -1px -1px 0 rgba(255, 0, 64, 0.15), 0 -1px 0 rgba(255, 0, 64, 0.15), 1px -1px 0 rgba(255, 0, 64, 0.15), -20px 20px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px 0 var(--color-name-11), 0 1px 0 var(--color-name-11), -1px 1px 0 var(--color-name-11), -1px 0 0 var(--color-name-11), -1px -1px 0 var(--color-name-11), 0 -1px 0 var(--color-name-11), 1px -1px 0 var(--color-name-11), -20px 20px 20px rgba(0, 0, 0, 0.9);
 }
